@@ -1,32 +1,35 @@
-```python
-# Compiled Python files
-*.pyc
+```gitignore
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+python-eggs/
 
 # Virtual environments
 venv/
 .venv/
 env/
+ENV/
 
 # Logs
 *.log
 
-# Environment files
-.env
-.env.local
-*.env.*
-
-# Editor/IDE files
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
-# Coverage reports
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
 coverage/
 htmlcov/
-.coverage
 
 # Testing
 .pytest_cache/

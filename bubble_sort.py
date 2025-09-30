@@ -8,6 +8,8 @@ def is_all_numbers(arr):
     Returns:
         如果所有元素都是数字则返回 True，否则返回 False。
     """
+    if not isinstance(arr, list):
+        return False
     return all(isinstance(x, (int, float)) for x in arr)
 
 def bubble_sort(arr):
