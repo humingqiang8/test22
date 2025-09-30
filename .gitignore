@@ -1,23 +1,45 @@
-```
-# Compiled files
-*.class
-
-# Dependencies
+```python
+# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
+# Generated files
+dist/
+build/
+*.egg-info/
 
 # Environment
 .env
 .env.local
 *.env.*
 
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
 ```
