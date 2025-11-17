@@ -1,3 +1,75 @@
-(bubble_sort.py is a source file, and there are no build artifacts, dependencies, or temp files in the changes)
+```
+# Compiled files
+*.class
 
-(empty — output nothing)
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build directories
+build/
+dist/
+target/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.ENV
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Package manager folders
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.gitattributes
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+```
