@@ -1,37 +1,28 @@
-```gitignore
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-python-eggs/
+```
+# Compiled files
+*.class
 
-# Virtual environments
+# Dependencies
+node_modules/
 venv/
 .venv/
-env/
-ENV/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
 
-# Logs
+# Logs and temp files
 *.log
+*.tmp
+*.swp
 
-# IDE
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Testing
-.pytest_cache/
-.mypy_cache/
+# Environment
+.env
+.env.local
+*.env.*
 ```
