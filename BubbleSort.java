@@ -1,6 +1,8 @@
 public class BubbleSort {
+    /**
+     * 主方法，用于测试冒泡排序
+     */
     public static void main(String[] args) {
-        // 假设这是环境中的数组 a
         int[] a = {64, 34, 25, 12, 22, 11, 90};
 
         System.out.println("Original array:");
@@ -42,10 +44,16 @@ public class BubbleSort {
     }
 
     // 打印数组函数
+    /**
+     * 打印数组元素
+     * @param arr 要打印的数组
+     */
     public static void printArray(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
     }
