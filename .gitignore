@@ -1,3 +1,29 @@
-(bubble_sort.py is a source file, and there are no build artifacts, dependencies, or temp files in the changes)
+```
+# Compiled files
+*.class
 
-(empty — output nothing)
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Build directories
+build/
+dist/
+target/
+```
