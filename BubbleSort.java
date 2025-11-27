@@ -1,15 +1,75 @@
 public class BubbleSort {
+    
+    /**
+     * 主方法 - 用于测试冒泡排序
+     */
     public static void main(String[] args) {
-        // 假设这是环境中的数组 a
-        int[] a = {64, 34, 25, 12, 22, 11, 90};
-
-        System.out.println("Original array:");
-        printArray(a);
-
-        bubbleSort(a);
-
-        System.out.println("Sorted array:");
-        printArray(a);
+        // 测试用例1: 普通未排序数组
+        int[] arr1 = {64, 34, 25, 12, 22, 11, 90};
+        
+        System.out.println("测试用例1 - 普通未排序数组:");
+        System.out.print("排序前: ");
+        printArray(arr1);
+        
+        bubbleSort(arr1);
+        
+        System.out.print("排序后: ");
+        printArray(arr1);
+        
+        // 测试用例2: 已排序数组
+        int[] arr2 = {1, 2, 3, 4, 5};
+        System.out.println("\n测试用例2 - 已排序数组:");
+        System.out.print("排序前: ");
+        printArray(arr2);
+        
+        bubbleSort(arr2);
+        
+        System.out.print("排序后: ");
+        printArray(arr2);
+        
+        // 测试用例3: 逆序数组
+        int[] arr3 = {5, 4, 3, 2, 1};
+        System.out.println("\n测试用例3 - 逆序数组:");
+        System.out.print("排序前: ");
+        printArray(arr3);
+        
+        bubbleSort(arr3);
+        
+        System.out.print("排序后: ");
+        printArray(arr3);
+        
+        // 测试用例4: 单个元素数组
+        int[] arr4 = {42};
+        System.out.println("\n测试用例4 - 单个元素数组:");
+        System.out.print("排序前: ");
+        printArray(arr4);
+        
+        bubbleSort(arr4);
+        
+        System.out.print("排序后: ");
+        printArray(arr4);
+        
+        // 测试用例5: 空数组
+        int[] arr5 = {};
+        System.out.println("\n测试用例5 - 空数组:");
+        System.out.print("排序前: ");
+        printArray(arr5);
+        
+        bubbleSort(arr5);
+        
+        System.out.print("排序后: ");
+        printArray(arr5);
+        
+        // 测试用例6: 包含重复元素的数组
+        int[] arr6 = {3, 7, 3, 1, 7, 2};
+        System.out.println("\n测试用例6 - 包含重复元素的数组:");
+        System.out.print("排序前: ");
+        printArray(arr6);
+        
+        bubbleSort(arr6);
+        
+        System.out.print("排序后: ");
+        printArray(arr6);
     }
 
     /**
