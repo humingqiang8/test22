@@ -1,15 +1,56 @@
 public class BubbleSort {
+    
     public static void main(String[] args) {
-        // 假设这是环境中的数组 a
+        // 测试冒泡排序
         int[] a = {64, 34, 25, 12, 22, 11, 90};
-
+        
         System.out.println("Original array:");
         printArray(a);
-
+        
         bubbleSort(a);
-
+        
         System.out.println("Sorted array:");
         printArray(a);
+        
+        // 测试边界情况
+        testEdgeCases();
+    }
+    
+    /**
+     * 测试边界情况
+     */
+    public static void testEdgeCases() {
+        System.out.println("\n--- Testing edge cases ---");
+        
+        // 空数组
+        int[] emptyArr = {};
+        System.out.print("Empty array: ");
+        bubbleSort(emptyArr);
+        printArray(emptyArr);
+        
+        // 单元素数组
+        int[] singleArr = {42};
+        System.out.print("Single element: ");
+        bubbleSort(singleArr);
+        printArray(singleArr);
+        
+        // 已排序数组
+        int[] sortedArr = {1, 2, 3, 4, 5};
+        System.out.print("Already sorted: ");
+        bubbleSort(sortedArr);
+        printArray(sortedArr);
+        
+        // 逆序数组
+        int[] reverseArr = {5, 4, 3, 2, 1};
+        System.out.print("Reverse sorted: ");
+        bubbleSort(reverseArr);
+        printArray(reverseArr);
+        
+        // 包含重复元素
+        int[] duplicateArr = {3, 1, 4, 1, 5, 9, 2, 6, 5};
+        System.out.print("With duplicates: ");
+        bubbleSort(duplicateArr);
+        printArray(duplicateArr);
     }
 
     /**
