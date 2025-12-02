@@ -12,6 +12,43 @@ public class BubbleSort {
 
         System.out.println("Sorted array:");
         printArray(a);
+        
+        // 测试边界情况
+        System.out.println("\nTesting edge cases:");
+        
+        // 空数组
+        int[] emptyArr = {};
+        System.out.print("Empty array: ");
+        bubbleSort(emptyArr);
+        printArray(emptyArr);
+        
+        // 单元素数组
+        int[] singleArr = {42};
+        System.out.print("Single element array: ");
+        printArray(singleArr);
+        bubbleSort(singleArr);
+        printArray(singleArr);
+        
+        // 已排序数组
+        int[] sortedArr = {1, 2, 3, 4, 5};
+        System.out.print("Already sorted array: ");
+        printArray(sortedArr);
+        bubbleSort(sortedArr);
+        printArray(sortedArr);
+        
+        // 逆序数组
+        int[] reverseArr = {5, 4, 3, 2, 1};
+        System.out.print("Reverse sorted array: ");
+        printArray(reverseArr);
+        bubbleSort(reverseArr);
+        printArray(reverseArr);
+        
+        // 包含重复元素的数组
+        int[] duplicateArr = {3, 7, 3, 1, 7, 2, 1};
+        System.out.print("Array with duplicates: ");
+        printArray(duplicateArr);
+        bubbleSort(duplicateArr);
+        printArray(duplicateArr);
     }
 
     /**
