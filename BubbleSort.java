@@ -49,6 +49,7 @@ public class BubbleSort {
     
     // 测试方法
     public static void main(String[] args) {
+        // 测试一般情况
         int[] arr = {64, 34, 25, 12, 22, 11, 90};
         
         System.out.println("排序前的数组:");
@@ -58,5 +59,37 @@ public class BubbleSort {
         
         System.out.println("排序后的数组:");
         printArray(arr);
+        
+        // 测试边界情况
+        int[] emptyArr = {};
+        int[] singleArr = {42};
+        int[] sortedArr = {1, 2, 3, 4, 5};
+        int[] reverseArr = {5, 4, 3, 2, 1};
+        int[] duplicateArr = {3, 7, 3, 1, 7, 2, 1};
+        
+        System.out.println("\n测试边界情况:");
+        
+        System.out.print("空数组: ");
+        bubbleSort(emptyArr);
+        printArray(emptyArr);
+        
+        System.out.print("单元素数组: ");
+        bubbleSort(singleArr);
+        printArray(singleArr);
+        
+        System.out.print("已排序数组: ");
+        printArray(sortedArr);
+        bubbleSort(sortedArr);
+        printArray(sortedArr);
+        
+        System.out.print("逆序数组: ");
+        printArray(reverseArr);
+        bubbleSort(reverseArr);
+        printArray(reverseArr);
+        
+        System.out.print("重复元素数组: ");
+        printArray(duplicateArr);
+        bubbleSort(duplicateArr);
+        printArray(duplicateArr);
     }
 }
