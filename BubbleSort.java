@@ -1,6 +1,10 @@
 public class BubbleSort {
+    
+    /**
+     * 主方法 - 演示冒泡排序算法
+     */
     public static void main(String[] args) {
-        // 假设这是环境中的数组 a
+        // 示例数组
         int[] a = {64, 34, 25, 12, 22, 11, 90};
 
         System.out.println("Original array:");
