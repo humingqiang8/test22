@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG三角形</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        svg {
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SVG三角形示例</h1>
+        <!-- 等边三角形 -->
+        <svg width="300" height="260" viewBox="0 0 300 260">
+            <polygon points="150,20 280,240 20,240" fill="#3498db" stroke="#2980b9" stroke-width="4"/>
+        </svg>
+        
+        <h2>其他类型的三角形</h2>
+        
+        <!-- 直角三角形 -->
+        <svg width="200" height="200" style="margin: 20px;">
+            <polygon points="20,20 20,180 180,180" fill="#e74c3c" stroke="#c0392b" stroke-width="3"/>
+        </svg>
+        
+        <!-- 等腰三角形 -->
+        <svg width="200" height="200" style="margin: 20px;">
+            <polygon points="100,20 20,180 180,180" fill="#2ecc71" stroke="#27ae60" stroke-width="3"/>
+        </svg>
+    </div>
+</body>
+</html>
